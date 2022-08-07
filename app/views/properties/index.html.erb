@@ -1,0 +1,7 @@
+<h1>Published properties</h1>
+<p>Showing <%= pluralize @properties.count, 'published property' %> <i>(of <%= @pagination['total'] %> total)</i></p>
+<%= render partial: "shared/pagination", locals: {pagination: @pagination} %>
+<% @properties.each do |property| %>
+  <%= render partial: "property", locals: {property: property} %>
+<% end%>
+<%= render partial: "shared/pagination", locals: {pagination: @pagination} %>

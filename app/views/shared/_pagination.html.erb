@@ -1,0 +1,4 @@
+<div class="pagination">
+  <%=link_to '<Previous page', root_path(:page => previous_page(pagination)) if previous_page(pagination) %>
+  <%=link_to 'Next page>', root_path(:page => next_page(pagination)) if next_page(pagination) %>
+</div>

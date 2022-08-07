@@ -1,0 +1,8 @@
+<h1>Property #<%= @property['public_id'] %></h1>
+<h2><%= @property['title'] %></h2>
+<p><%= @property['description'] %></p>
+<%= render partial: 'property_images_slideshow', locals: {images: @property['property_images']} if @property['property_images'].any?%>
+<p><%= @property['property_type'] %></p>
+<p><%= @property['location']['name'] %></p>
+
+<%= link_to 'Go Back', root_path %>

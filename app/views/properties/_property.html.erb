@@ -1,0 +1,8 @@
+<div>
+  <h2>Property #<%= property['public_id'] %></h2>
+  <h3><%= property['title'] %></h3>
+  <p><%= property['location'] %></p>
+  <i><%= property['property_type'] %></i>
+  <p><%= image_tag property['title_image_thumb'], alt: property['title'] if property['title_image_thumb'].present? %></p>
+  <%= link_to 'More info...', property_path(property['public_id']) %>
+</div>
