@@ -10,7 +10,7 @@ class LeadsController < ApplicationController
     puts lead_params
     res = @easy_broker_client.create_lead(lead_params)
     if res.success?
-      redirect_to property_path(lead_params[:property_id]), notice: 'Lead created successfully'
+      redirect_to property_path(lead_params[:property_id]), notice: 'We will contact you shortly'
     else
       redirect_to property_path(lead_params[:property_id]), alert: JSON.parse(res.body)['error']
     end

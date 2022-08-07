@@ -1,8 +1,14 @@
-<div>
-  <h2>Property #<%= property['public_id'] %></h2>
-  <h3><%= property['title'] %></h3>
-  <p><%= property['location'] %></p>
-  <i><%= property['property_type'] %></i>
-  <p><%= image_tag property['title_image_thumb'], alt: property['title'] if property['title_image_thumb'].present? %></p>
-  <%= link_to 'More info...', property_path(property['public_id']) %>
+<div class="card col-4 gy-3">
+    <%= link_to property_path(property['public_id']) do %>
+      <%= image_tag property['title_image_thumb'], class: 'card-img-top', alt: property['title'] if property['title_image_thumb'].present? %>
+    <% end%>
+    <div class="card-body d-flex flex-column justify-content-between">
+      <div>
+        <h2>Property #<%= property['public_id'] %></h2>
+        <h3><%= property['title'] %></h3>
+        <p><%= property['location'] %></p>
+        <p><i><%= property['property_type'] %></i></p>
+      </div>
+      <%= link_to 'Click for more info...', property_path(property['public_id']), class: 'btn btn-primary' %>
+    </div>
 </div>
