@@ -5,4 +5,29 @@
 <p><%= @property['property_type'] %></p>
 <p><%= @property['location']['name'] %></p>
 
+<%= form_with url: leads_path, method: :post do |form| %>
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  <div>
+    <%= form.label :phone %>
+    <%= form.telephone_field :phone %>
+  </div>
+  <div>
+    <%= form.label :email %>
+    <%= form.email_field :email %>
+  </div>
+  <div>
+    <%= form.label :message %>
+    <%= form.text_area :message, size: "70x5" %>
+  </div>
+  <div>
+    <%= form.hidden_field :property_id, value: @property['public_id'] %>
+    <%= form.hidden_field :source, value: root_url %>
+  </div>
+
+  <%= form.submit "Send" %>
+<% end %>
+
 <%= link_to 'Go Back', root_path %>
