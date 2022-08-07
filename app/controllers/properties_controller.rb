@@ -8,7 +8,7 @@ class PropertiesController < ApplicationController
 
   def index
     page = [1, params[:page].to_i].max
-    @properties, @pagination = @easy_broker_client.properties(page:, only_published: false)
+    @properties, @pagination = @easy_broker_client.properties(page:, only_published: true)
   end
 
   def show
