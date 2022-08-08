@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.stagingeb.com/v1/properties/EB-D3662
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Authorization:
+      - l7u502p8v46ba3ppgvj5y2aad50lb9
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 08 Aug 2022 18:57:51 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 150782c3-81e1-4632-98b2-e2466c4357e4
+      X-Download-Options:
+      - noopen
+      Etag:
+      - W/"0a35218da86c33ade434fee04d8478fa"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.056339'
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - rp=api.stagingeb.com; path=/; expires=Tue, 09 Aug 2022 18:57:51 GMT
+      - source=api.stagingeb.com; path=/; expires=Wed, 08 Feb 2023 19:57:51 GMT
+      X-Powered-By:
+      - Phusion Passenger(R) 6.0.14
+      Server:
+      - nginx/1.18.0 + Phusion Passenger(R) 6.0.14
+    body:
+      encoding: UTF-8
+      string: '{"public_id":"EB-D3662","title":"Beautiful property in Condesa.","description":"This
+        property is a test","bedrooms":1,"bathrooms":1,"half_bathrooms":1,"parking_spaces":1,"lot_size":0.0,"construction_size":0.0,"lot_length":0.0,"lot_width":0.0,"floors":null,"floor":null,"age":2020,"internal_id":"PRRRROVE1","expenses":"5000","location":{"name":"Carmen
+        Serdan, Monterrey, Nuevo León","latitude":-70.01,"longitude":30.01,"street":null,"postal_code":null,"show_exact_location":true,"hide_exact_location":false,"exterior_number":null,"interior_number":null},"property_type":"Departamento","created_at":"2022-06-03T17:26:08-05:00","updated_at":"2022-06-03T17:26:08-05:00","published_at":"2022-06-03T17:26:08-05:00","operations":[{"type":"rental","amount":20000.0,"currency":"MXN","formatted_amount":"$20,000","commission":{"type":"percentage"},"unit":"total"}],"property_files":[],"videos":[],"virtual_tour":null,"collaboration_notes":"We
+        only share commission with agencies located in the same city.","public_url":"https://www.stagingeb.com/mx/inmueble/beautiful-property-in-condesa-cdb23c2b-25ca-4e07-907c-e88e260989b2","tags":[],"show_prices":true,"share_commission":true,"property_images":[],"agent":null,"features":[{"name":"Seguridad
+        12 horas","category":"General"},{"name":"Balcón","category":"Exterior"}]}'
+  recorded_at: Mon, 08 Aug 2022 18:57:51 GMT
+recorded_with: VCR 6.1.0

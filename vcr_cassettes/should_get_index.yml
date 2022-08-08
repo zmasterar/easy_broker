@@ -1,0 +1,103 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.stagingeb.com/v1/properties?limit=15&page=1&search%5Bstatuses%5D%5B0%5D=published
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Authorization:
+      - l7u502p8v46ba3ppgvj5y2aad50lb9
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 08 Aug 2022 18:57:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - cdcda1e2-27c9-4a51-bd1a-df45d9e2873e
+      X-Download-Options:
+      - noopen
+      Etag:
+      - W/"3b284d4d7e9d847e04a94677361cd4b5"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.113634'
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - rp=api.stagingeb.com; path=/; expires=Tue, 09 Aug 2022 18:57:52 GMT
+      - source=api.stagingeb.com; path=/; expires=Wed, 08 Feb 2023 19:57:52 GMT
+      X-Powered-By:
+      - Phusion Passenger(R) 6.0.14
+      Server:
+      - nginx/1.18.0 + Phusion Passenger(R) 6.0.14
+    body:
+      encoding: UTF-8
+      string: '{"pagination":{"limit":15,"page":1,"total":460,"next_page":"https://api.stagingeb.com/v1/properties?limit=15\u0026page=2\u0026search%5Bstatuses%5D%5B%5D=published"},"content":[{"public_id":"EB-D3662","title":"Beautiful
+        property in Condesa.","title_image_full":null,"title_image_thumb":null,"location":"Carmen
+        Serdan, Monterrey, Nuevo León","operations":[{"type":"rental","amount":20000.0,"currency":"MXN","formatted_amount":"$20,000","commission":{"type":"percentage"},"unit":"total"}],"bedrooms":1,"bathrooms":1,"parking_spaces":1,"property_type":"Departamento","lot_size":0.0,"construction_size":0.0,"updated_at":"2022-06-03T17:26:08-05:00","agent":null,"show_prices":true,"share_commission":true},{"public_id":"EB-D3668","title":"Beautiful
+        property in Condesa.","title_image_full":null,"title_image_thumb":null,"location":"Carmen
+        Serdan, Monterrey, Nuevo León","operations":[{"type":"rental","amount":20000.0,"currency":"MXN","formatted_amount":"$20,000","commission":{"type":"percentage"},"unit":"total"}],"bedrooms":1,"bathrooms":1,"parking_spaces":1,"property_type":"Departamento","lot_size":0.0,"construction_size":0.0,"updated_at":"2022-06-06T14:41:41-05:00","agent":null,"show_prices":true,"share_commission":true},{"public_id":"EB-C0156","title":"Casa
+        con uso de suelo prueba","title_image_full":"https://assets.stagingeb.com/property_images/30156/116630/EB-C0156.png?version=1598540675","title_image_thumb":"https://assets.stagingeb.com/property_images/30156/116630/EB-C0156_thumb.png?version=1598540675","location":"La
+        Punta, Cosío, Aguascalientes","operations":[{"type":"sale","amount":12312312.0,"currency":"MXN","formatted_amount":"$12,312,312","commission":{"type":"percentage","value":"5.0"},"unit":"total"}],"bedrooms":1,"bathrooms":2,"parking_spaces":null,"property_type":"Casa
+        con uso de suelo","lot_size":0.0,"construction_size":0.0,"updated_at":"2022-08-07T14:02:08-05:00","agent":"Alejandro
+        Blanco Zivec","show_prices":true,"share_commission":true},{"public_id":"EB-C0313","title":"afsdf","title_image_full":null,"title_image_thumb":null,"location":"Ciudad
+        Insurgentes, Comondú, Baja California Sur","operations":[{"type":"sale","amount":234223.0,"currency":"MXN","formatted_amount":"$234,223","commission":{"type":"percentage"},"unit":"total"}],"bedrooms":null,"bathrooms":null,"parking_spaces":null,"property_type":"Bodega
+        industrial","lot_size":342.0,"construction_size":432.0,"updated_at":"2022-08-07T14:07:42-05:00","agent":"Alejandro
+        Blanco Zivec","show_prices":true,"share_commission":true},{"public_id":"EB-B5338","title":"Locales
+        en Venta Edificio Roble en San Pedro Garza Garcia","title_image_full":"https://assets.stagingeb.com/property_images/25338/49435/EB-B5338.jpg?version=1555543329","title_image_thumb":"https://assets.stagingeb.com/property_images/25338/49435/EB-B5338_thumb.jpg?version=1555543329","location":"Valle
+        Del Campestre, San Pedro Garza García, Nuevo León","operations":[{"type":"sale","amount":5506200.0,"currency":"MXN","formatted_amount":"$5,506,200","commission":{"type":"percentage"},"unit":"total"}],"bedrooms":null,"bathrooms":null,"parking_spaces":null,"property_type":"Local
+        comercial","lot_size":0.0,"construction_size":61.0,"updated_at":"2022-08-07T14:08:49-05:00","agent":"Alejandro
+        Blanco Zivec","show_prices":true,"share_commission":false},{"public_id":"EB-C6351","title":"CASA
+        EN VENTA EN COLONIA DEL VALLE EN SAN PEDRO GARZA GARCÍA","title_image_full":"https://assets.stagingeb.com/property_images/36351/126571/EB-C6351.jpg?version=1611968241","title_image_thumb":"https://assets.stagingeb.com/property_images/36351/126571/EB-C6351_thumb.jpg?version=1611968241","location":"Del
+        Valle, San Pedro Garza García, Nuevo León","operations":[{"type":"sale","amount":30850000.0,"currency":"MXN","formatted_amount":"$30,850,000","commission":{"type":"percentage"},"unit":"total"}],"bedrooms":3,"bathrooms":1,"parking_spaces":null,"property_type":"Casa","lot_size":590.0,"construction_size":610.0,"updated_at":"2022-08-07T14:24:50-05:00","agent":null,"show_prices":true,"share_commission":false},{"public_id":"EB-C6352","title":"CASA
+        EN VENTA EN FUENTES DEL VALLE EN SAN PEDRO GARZA GARCIA","title_image_full":"https://assets.stagingeb.com/property_images/36352/126577/EB-C6352.jpg?version=1611968245","title_image_thumb":"https://assets.stagingeb.com/property_images/36352/126577/EB-C6352_thumb.jpg?version=1611968245","location":"Fuentes
+        del Valle, San Pedro Garza García, Nuevo León","operations":[{"type":"sale","amount":28300000.0,"currency":"MXN","formatted_amount":"$28,300,000","commission":{"type":"percentage"},"unit":"total"}],"bedrooms":4,"bathrooms":1,"parking_spaces":3,"property_type":"Casa","lot_size":476.0,"construction_size":628.0,"updated_at":"2022-08-07T14:24:50-05:00","agent":null,"show_prices":true,"share_commission":false},{"public_id":"EB-C6353","title":"DEPARTAMENTO
+        EN VENTA EN MIRAVALLE EN MONTERREY","title_image_full":"https://assets.stagingeb.com/property_images/36353/126583/EB-C6353.jpg?version=1611968250","title_image_thumb":"https://assets.stagingeb.com/property_images/36353/126583/EB-C6353_thumb.jpg?version=1611968250","location":"Rincón
+        de Santa María, Monterrey, Nuevo León","operations":[{"type":"sale","amount":6278000.0,"currency":"MXN","formatted_amount":"$6,278,000","commission":{"type":"percentage"},"unit":"total"}],"bedrooms":3,"bathrooms":1,"parking_spaces":null,"property_type":"Departamento","lot_size":0.0,"construction_size":172.0,"updated_at":"2022-08-07T14:24:50-05:00","agent":null,"show_prices":true,"share_commission":false},{"public_id":"EB-C6356","title":"DEPARTAMENTO
+        EN VENTA EN ARBOLEDA EN SAN PEDRO GARZA GARCIA","title_image_full":"https://assets.stagingeb.com/property_images/36356/126606/EB-C6356.jpg?version=1611968275","title_image_thumb":"https://assets.stagingeb.com/property_images/36356/126606/EB-C6356_thumb.jpg?version=1611968275","location":"Valle
+        Del Campestre, San Pedro Garza García, Nuevo León","operations":[{"type":"sale","amount":22000000.0,"currency":"MXN","formatted_amount":"$22,000,000","commission":{"type":"percentage"},"unit":"total"}],"bedrooms":3,"bathrooms":1,"parking_spaces":2,"property_type":"Departamento","lot_size":0.0,"construction_size":310.0,"updated_at":"2022-08-07T14:24:50-05:00","agent":null,"show_prices":true,"share_commission":false},{"public_id":"EB-C6372","title":"DEPARTAMENTO
+        EN VENTA EN VALLE PONIENTE","title_image_full":"https://assets.stagingeb.com/property_images/36372/126743/EB-C6372.jpg?version=1611968339","title_image_thumb":"https://assets.stagingeb.com/property_images/36372/126743/EB-C6372_thumb.jpg?version=1611968339","location":"Zona
+        Valle Poniente, San Pedro Garza García, Nuevo León","operations":[{"type":"sale","amount":4500000.0,"currency":"MXN","formatted_amount":"$4,500,000","commission":{"type":"percentage"},"unit":"total"}],"bedrooms":2,"bathrooms":null,"parking_spaces":null,"property_type":"Departamento","lot_size":0.0,"construction_size":140.0,"updated_at":"2022-08-07T14:24:50-05:00","agent":null,"show_prices":true,"share_commission":false},{"public_id":"EB-C6374","title":"DEPARTAMENTO
+        EN VENTA EN VALLE ORIENTE EN SAN PEDRO GARZA GARCÍA","title_image_full":"https://assets.stagingeb.com/property_images/36374/126751/EB-C6374.jpg?version=1611968342","title_image_thumb":"https://assets.stagingeb.com/property_images/36374/126751/EB-C6374_thumb.jpg?version=1611968342","location":"Del
+        Valle Oriente, San Pedro Garza García, Nuevo León","operations":[{"type":"sale","amount":850000.0,"currency":"USD","formatted_amount":"US$
+        850,000","commission":{"type":"percentage"},"unit":"total"}],"bedrooms":3,"bathrooms":1,"parking_spaces":2,"property_type":"Departamento","lot_size":0.0,"construction_size":403.0,"updated_at":"2022-08-07T14:24:50-05:00","agent":null,"show_prices":true,"share_commission":false},{"public_id":"EB-D3232","title":"Una
+        casa chida","title_image_full":null,"title_image_thumb":null,"location":"Campestre
+        San Carlos, San Francisco de los Romo, Aguascalientes","operations":[{"type":"sale","currency":"MXN","formatted_amount":"Consulte
+        precio","commission":{"type":"percentage"},"unit":"total"}],"bedrooms":1,"bathrooms":null,"parking_spaces":null,"property_type":"Casa","lot_size":0.0,"construction_size":0.0,"updated_at":"2022-08-07T14:24:50-05:00","agent":"Alejandro
+        Blanco Zivec","show_prices":true,"share_commission":true},{"public_id":"EB-D3658","title":"Beautiful
+        property in Condesa.","title_image_full":null,"title_image_thumb":null,"location":"Carmen
+        Serdan, Monterrey, Nuevo León","operations":[{"type":"rental","amount":20000.0,"currency":"MXN","formatted_amount":"$20,000","commission":{"type":"percentage"},"unit":"total"}],"bedrooms":1,"bathrooms":1,"parking_spaces":1,"property_type":"Departamento","lot_size":0.0,"construction_size":0.0,"updated_at":"2022-08-07T14:24:50-05:00","agent":null,"show_prices":true,"share_commission":true},{"public_id":"EB-C6361","title":"DEPARTAMENTO
+        EN VENTA EN PLAYA DEL CARMEN EN QUINTANA ROO","title_image_full":"https://assets.stagingeb.com/property_images/36361/126686/EB-C6361.jpg?version=1611968316","title_image_thumb":"https://assets.stagingeb.com/property_images/36361/126686/EB-C6361_thumb.jpg?version=1611968316","location":"Playa
+        del Carmen Centro, Solidaridad, Quintana Roo","operations":[{"type":"sale","amount":368960.0,"currency":"USD","formatted_amount":"US$
+        368,960","commission":{"type":"percentage"},"unit":"total"}],"bedrooms":2,"bathrooms":null,"parking_spaces":null,"property_type":"Departamento","lot_size":0.0,"construction_size":97.5,"updated_at":"2022-08-07T14:24:51-05:00","agent":null,"show_prices":true,"share_commission":false},{"public_id":"EB-C6365","title":"DEPARTAMENTO
+        EN VENTA EN TORRE LIU EAST EN SAN PEDRO GARZA GARCIA","title_image_full":"https://assets.stagingeb.com/property_images/36365/126710/EB-C6365.jpg?version=1611968326","title_image_thumb":"https://assets.stagingeb.com/property_images/36365/126710/EB-C6365_thumb.jpg?version=1611968326","location":"Del
+        Valle Oriente, San Pedro Garza García, Nuevo León","operations":[{"type":"sale","amount":7500000.0,"currency":"MXN","formatted_amount":"$7,500,000","commission":{"type":"percentage"},"unit":"total"}],"bedrooms":2,"bathrooms":1,"parking_spaces":2,"property_type":"Departamento","lot_size":0.0,"construction_size":128.9,"updated_at":"2022-08-07T14:24:51-05:00","agent":null,"show_prices":true,"share_commission":false}]}'
+  recorded_at: Mon, 08 Aug 2022 18:57:52 GMT
+recorded_with: VCR 6.1.0
