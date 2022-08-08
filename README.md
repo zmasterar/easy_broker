@@ -72,4 +72,4 @@ I also made a really basic previous and next buttons in the main page, but I thi
 
 I think my code could improve in the abstraction of the class used to connect with the EasyBroker API, and have a better structure for better scalability (make different classes for each endpoint, for example).
 
-The hardest thing for me when building websites is when it comes to testing, not as much in the _how_ but in the _what_ to test.
+The hardest thing for me when building websites is when it comes to testing, not as much in the _how_ but in the _what_ to test, so that's something I look forwards to improve.
