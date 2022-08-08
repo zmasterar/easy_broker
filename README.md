@@ -46,22 +46,22 @@ Here are some screenshots of the site
 
 <details>
 <summary>Main Page</summary>
-![Main page](https://i.imgur.com/QuqWYZO.png)
+<img src="https://i.imgur.com/QuqWYZO.png" alt="Main Page" />
 </details>
 
 <details>
 <summary>Property page and contact form</summary>
-![Property page and contact form](https://i.imgur.com/9UlJT11.png)
+<img alt="Property page and contact form" src="https://i.imgur.com/9UlJT11.png" />
 </details>
 
 <details>
 <summary>Contact form submitted correctly</summary>
-![Contact form submitted correctly](https://i.imgur.com/oXu7U0k.png)
+<img alt="Contact form submitted correctly" src="https://i.imgur.com/oXu7U0k.png" />
 </details>
 
 <details>
 <summary>Contact form submitted with errors</summary>
-![Contact form submitted with errors](https://i.imgur.com/RZqh6N0.png)
+<img alt="Contact form submitted with errors" src="https://i.imgur.com/RZqh6N0.png" />
 </details>
 
 ## Notes
